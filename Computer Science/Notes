@@ -1,0 +1,29 @@
+T = time to run program.
+T(1) = 1
+T(n() = T(n/2)+1
+T(2) = T(2/2)+1 = T(1)+1 = 2
+T(4) = T(4/2)+1 = T(2)+1 = 3
+T(8) = T(8/2)+1 = T(4)+1 = 4
+T(16)= T(16/2)+1= T(8)+1 = 5
+.
+.
+.
+
+Prove: T(n) = logs(2)(n)+1
+
+Step 1: Prove Base Case
+
+T(1) = log(2)(1)+(1) = 0+1 = 1
+
+Step 2: Assume that case n is true
+ .
+. . T(n) = log(2)(n)+1
+
+Step 3: look at n_1 case
+T(2k) = T(2k/2)+1 = T(k)+1
+
+from Step 2: = log(2)(k)+1+1
+= log(2)(k)+log(2)(2)+1
+= log(2)(2k)+1
+ .
+. . T(2k) = log(2)(2k)+1
